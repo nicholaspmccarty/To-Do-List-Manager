@@ -18,6 +18,7 @@ class ToDoList {
         tasks.append(task)
     }
 
+    /// A simple method for removing a task from our global array.
     func removeTask(task: MyTask) {
         let id: Int = task.id
 
@@ -27,13 +28,17 @@ class ToDoList {
             // Step 3: Remove the task from the array
             tasks.remove(at: index)
      }
+    }
 
-     func markTaskAsCompleted() {
+    // A simple method for marking tasks completed in our array. First we grab it, then set it to completed.
+     func markTaskAsCompleted(task: MyTask) {
         let id: Int = task.id
-
-        if let index = tasks.first(where: { $0.id == id }) {
-            print("Found Task: \(index)")
-        } else {
+        
+        // if index exists
+        if let index = tasks.firstIndex(where: { $0.id == id }) {
+            print("Found Task: \(tasks[index])")
+            tasks[index].isCompleted = true
+        }  else {
             print("ERROR: Task not found. ")
                 }
      }
@@ -41,4 +46,3 @@ class ToDoList {
 
 
     }
-}
