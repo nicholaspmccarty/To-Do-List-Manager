@@ -44,5 +44,28 @@ class ToDoList {
      }
 
 
+    // A simple function to list all the tasks from our global tasks array. 
+     func listAllTasks() {
+        for task in tasks {
+            print(task.title)
+        }
+     }
+
+
+    // A more advanced construction that will filter our tasks based off a provided boolean status.
+    // If we are looking for all tasks that are completed, we pass a true value. If else, provide a false value.
+     func filterTasks(status: Bool) -> [MyTask] {
+        var ret: [MyTask] = []
+        for i in 0..<tasks.count {
+            if tasks[i].isCompleted == status {
+                ret.append(tasks[i])
+            }
+                }   
+        
+        return ret
+
+     }
+
+
 
     }
