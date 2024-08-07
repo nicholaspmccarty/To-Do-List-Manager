@@ -9,10 +9,12 @@ func doTest() {
     
     print("")
     print("Testing isCompleted")
+    
     // Checking to see if myTask is completed
     print("Task Completed: SHOULD BE FALSE ->>>)")
     print("Task Completed IS : \(myObject.isCompleted)")
     let TDL = ToDoList()
+    
     print("")
     print("myObject 2 created and initialized. Let's test the ToDoList class")
     TDL.addTask(task: myObject)
@@ -45,6 +47,7 @@ func doTest() {
     var ret: [MyTask] = []
     ret = TDL.filterTasks(status: true)
     print("We will be displaying all true tasks with status TRUE")
+    
     // For loop to iterate through list
     for task in ret {
         print(task.title)
