@@ -19,13 +19,26 @@ class ToDoList {
     }
 
     func removeTask(task: MyTask) {
-        var id: Int = task.id
+        let id: Int = task.id
 
         if let index = tasks.firstIndex(where: { task in 
             return task.id == id 
             }) {
             // Step 3: Remove the task from the array
             tasks.remove(at: index)
-}
+     }
+
+     func markTaskAsCompleted() {
+        let id: Int = task.id
+
+        if let index = tasks.first(where: { $0.id == id }) {
+            print("Found Task: \(index)")
+        } else {
+            print("ERROR: Task not found. ")
+                }
+     }
+
+
+
     }
 }
