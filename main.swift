@@ -35,7 +35,7 @@ func doTest() {
     print("")
     
     print("Testing listAllTasks again")
-    // Add Objects to ToDoList
+    // Add Objects added to the ToDoList
     TDL.addTask(task: myObject3)
     TDL.addTask(task: myObject4)
     TDL.addTask(task: myObject5)
@@ -48,7 +48,7 @@ func doTest() {
     ret = TDL.filterTasks(status: true)
     print("We will be displaying all true tasks with status TRUE")
     
-    // For loop to iterate through list
+    // For loop to iterate through the list
     for task in ret {
         print(task.title)
     }
