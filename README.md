@@ -13,9 +13,6 @@ This is a full-stack mobile to-do list app built with SwiftUI (frontend) and Fla
 - Separated task display and input into clean, modular views
 - Simple, intuitive UX to manage tasks without clutter
 
-## 📸 Screenshots
-*(Add 2–3 screenshots here)*
-
 ## 🚀 Tech Stack
 - Frontend: SwiftUI
 - Backend: Flask
