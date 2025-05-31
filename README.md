@@ -18,5 +18,3 @@ This is a full-stack mobile to-do list app built with SwiftUI (frontend) and Fla
 - Backend: Flask
 - Database: MySQL
 
-## 🧪 How to Run
-(Include steps to run the backend and frontend if needed)
